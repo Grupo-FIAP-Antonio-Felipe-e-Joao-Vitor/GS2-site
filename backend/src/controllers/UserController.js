@@ -1,11 +1,12 @@
 import users from "../models/userModel.js";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 class UserController {
 
     // Função de registro
-    static async registro (req, res) {
-        
+    static async registro(req, res) {
+
         try {
 
             const data = req.body;
@@ -38,7 +39,7 @@ class UserController {
     }
 
     // Função de login
-    static async login (req, res) {
+    static async login(req, res) {
 
         try {
 
@@ -60,7 +61,21 @@ class UserController {
                 return res.status(401).json({ message: "Senha incorreta." });
             };
 
-            return res.status(200).json({ message: "Usuário logado com sucesso.", user: user });
+            const token = jwt.sign(
+                {
+                    id: user._id,
+                    nome: user.nome,
+                    email: user.email,
+                    empresa: user.empresa,
+                    atuacao: user.atuacao
+                },
+                process.env.JWT_SECRET,
+                {
+                    expiresIn: "1d",
+                }
+            );
+
+            return res.status(200).json({ message: "Usuário logado com sucesso.", user: user, token: token });
 
         } catch (error) {
             return res.status(500).json({ message: "Erro interno.", error: error })
@@ -69,7 +84,7 @@ class UserController {
     }
 
     // Função que retorna todos os usuários
-    static async listar_usuarios (req, res) {
+    static async listar_usuarios(req, res) {
 
         try {
 
@@ -79,7 +94,7 @@ class UserController {
 
         } catch (error) {
             return res.status(500).json({ message: "Erro interno.", error: error })
-        } 
+        }
 
     }
 }
