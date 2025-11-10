@@ -1,13 +1,14 @@
 import imagem from "../assets/imagem-login.jpg"
 import Button from "../components/Button"
 import Input from "../components/Input"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import { login } from "../services/auth"
 
-const Login = () => {
+const Login = ({ setUser }) => {
 
   const { register, handleSubmit, reset, resetField } = useForm();
+  const navigate = useNavigate()
 
   async function onSubmit (data) {
     
@@ -17,6 +18,8 @@ const Login = () => {
       if (response.status === 200) {
         alert("Logado");
         reset()
+        setUser(response.data.user)
+        navigate("/")
       };
 
       if (response.status === 400) {
