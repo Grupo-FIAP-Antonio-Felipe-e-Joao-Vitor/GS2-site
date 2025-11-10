@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 
 class UserController {
 
+    // Função de registro
     static async registro (req, res) {
         
         try {
@@ -36,6 +37,7 @@ class UserController {
 
     }
 
+    // Função de login
     static async login (req, res) {
 
         try {
@@ -63,6 +65,21 @@ class UserController {
         } catch (error) {
             return res.status(500).json({ message: "Erro interno.", error: error })
         }
+
+    }
+
+    // Função que retorna todos os usuários
+    static async listar_usuarios (req, res) {
+
+        try {
+
+            const list = await users.find({});
+
+            return res.status(200).json({ users: list });
+
+        } catch (error) {
+            return res.status(500).json({ message: "Erro interno.", error: error })
+        } 
 
     }
 }
