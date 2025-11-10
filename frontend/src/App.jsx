@@ -4,13 +4,19 @@ import Home from "./routes/Home"
 import Login from "./routes/Login"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import { useState } from "react"
 
 function App() {
+
+   const [user, setUser] = useState(() => {
+    const savedUser = localStorage.getItem("user");
+    return savedUser ? JSON.parse(savedUser) : null;
+  });
 
   return (
     <BrowserRouter>
 
-      <Header />
+      <Header user={user} setUser={setUser}/>
 
       <main>
 
@@ -18,7 +24,7 @@ function App() {
 
           <Route path="/" element={<Home />}/>
           <Route path="/cadastro" element={<Cadastro />}/>
-          <Route path="/login" element={<Login />}/>
+          <Route path="/login" element={<Login setUser={setUser}/>}/>
 
         </Routes>
 
