@@ -1,4 +1,5 @@
 import imagem from "../assets/imagem-login.jpg"
+import Input from "../components/Input"
 
 const Login = () => {
   return (
@@ -14,17 +15,22 @@ const Login = () => {
         </div>
         
         <form
-            className="w-full md:w-1/2 flex flex-col justify-center items-center"
+            className="w-full px-5 md:w-1/2 flex flex-col gap-2"
         >
 
-            <div className="flex flex-col gap-1">
-                <label
-                    className="text-lg text-white"
-                >
-                    E-mail
-                </label>
-            </div>
+            <Input 
+                label={"Email"}
+                type={"email"}
+                placeholder={"Digite seu email"}
+            />
 
+            <Input 
+                label={"Senha"}
+                type={"password"}
+                placeholder={"Digite sua senha"}
+            />
+
+            
         </form>
     </div>
   )
