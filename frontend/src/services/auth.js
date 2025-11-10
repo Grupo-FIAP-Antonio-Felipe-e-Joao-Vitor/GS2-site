@@ -21,11 +21,7 @@ export async function login (data) {
 
         if (error.response) {
             
-            if (error.response.status === 400) return error.response;
-
-            if (error.response.status === 401) return error.response;
-
-            if (error.response.status === 500) return error.response;
+            if (error.response) return error.response;
 
             else return console.log(error);
 
@@ -34,3 +30,25 @@ export async function login (data) {
     }
     
 };
+
+export async function cadastro (data) {
+
+    try {
+
+        const response = await api.post("/register", data);
+
+        return response;
+
+    } catch (error) {
+
+        if (error.response) {
+            
+            if (error.response) return error.response;
+
+            else return console.log(error);
+
+        }
+
+    }
+
+}
