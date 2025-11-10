@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         enum: {
-            values: ["TI", "Marketing", "Vendas", "RH", "Financeiro"]
+            values: ["TI", "Marketing", "Vendas", "RH", "Financeiro", "Lianderanca"]
         }
     },
     email: { 
