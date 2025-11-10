@@ -1,7 +1,7 @@
 import api from "./api";
 
-export async function login (data) {
-    
+export async function login(data) {
+
     try {
 
         const response = await api.post("/login", data)
@@ -20,7 +20,7 @@ export async function login (data) {
     } catch (error) {
 
         if (error.response) {
-            
+
             if (error.response) return error.response;
 
             else return console.log(error);
@@ -28,10 +28,10 @@ export async function login (data) {
         }
 
     }
-    
+
 };
 
-export async function cadastro (data) {
+export async function cadastro(data) {
 
     try {
 
@@ -42,7 +42,7 @@ export async function cadastro (data) {
     } catch (error) {
 
         if (error.response) {
-            
+
             if (error.response) return error.response;
 
             else return console.log(error);
@@ -52,3 +52,8 @@ export async function cadastro (data) {
     }
 
 }
+
+export function logout() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+};
