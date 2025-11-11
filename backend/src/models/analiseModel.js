@@ -18,11 +18,11 @@ const analiseSchema = new mongoose.Schema({
         }
     },
     nivel_estresse: {
-        type: mongoose.Schema.Types.Int32,
+        type: String,
         required: true
     },
     nivel_satisfacao: {
-        type: mongoose.Schema.Types.Int32,
+        type: String,
         required: true
     },
     fatores_positivos: {

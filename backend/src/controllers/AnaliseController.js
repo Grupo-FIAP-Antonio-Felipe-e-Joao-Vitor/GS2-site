@@ -54,6 +54,17 @@ Sua função é analisar as respostas de um funcionário e gerar um relatório o
 5. Recomendações personalizadas para melhorar o bem-estar deste funcionário
 
 Mantenha as respostas em formato JSON e seja breve e claro.
+
+Resposta esperada: {
+    "atuacao": String (TI, Marketing, Vendas, RH, Financeiro, Lideranca),
+    "empresa": String (Fiap, Google, Mercado Livre),
+    "nivel_estresse": Int (1 a 5),
+    "nivel_satisfacao": Int (1 a 5),
+    "fatores_positivos": Array,
+    "fatores_negativos": Array,
+    "recomendacoes": Array
+}
+
 `;
 
       const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
@@ -63,55 +74,37 @@ Mantenha as respostas em formato JSON e seja breve e claro.
           .status(500)
           .json({ message: "Erro interno.", error: "API key não fornecida." });
 
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
       const payload = {
-        config: {
-          systemInstruction: SYSTEM_INSTRUCTION,
-
-          // Define que a saída deve ser no formato JSON
-          responseMimeType: "application/json",
-
-          // Fornece um schema para garantir a estrutura
-          responseSchema: {
-            type: "OBJECT",
-            properties: {
-              nivel_estresse: {
-                type: "INTEGER",
-                description: "1, 2, 3, 4, 5",
-              },
-              nivel_satisfacao: {
-                type: "INTEGER",
-                description: "1, 2, 3, 4, 5",
-              },
-              fatores_positivos: { type: "ARRAY", items: { type: "STRING" } },
-              fatores_negativos: { type: "ARRAY", items: { type: "STRING" } },
-              recomendacoes: { type: "ARRAY", items: { type: "STRING" } },
-            },
-          },
+        system_instruction: {
+          parts: [
+            { text: SYSTEM_INSTRUCTION }
+          ]
         },
-        // O conteúdo principal (o JSON de entrada do funcionário)
         contents: [
           {
             parts: [
-              {
-                text: JSON.stringify(data),
-              },
-            ],
-          },
+              { text: JSON.stringify(data) }
+            ]
+          }
         ],
+        generationConfig: {
+          responseMimeType: "application/json"
+        }
       };
+
 
       try {
         const response_IA = await axios.post(url, payload, {
-            headers: {
-                'Content-Type': 'application/json'
-            }
+          headers: {
+            'Content-Type': 'application/json'
+          }
         })
 
         const analise_IA = response_IA.data.candidates[0].content.parts[0].text;
 
-        await analises.create(analise_IA);
+        await analises.create(JSON.parse(analise_IA));
 
         return res.status(200).json({ message: "Análise enviada com sucesso.", analise: analise_IA });
 
