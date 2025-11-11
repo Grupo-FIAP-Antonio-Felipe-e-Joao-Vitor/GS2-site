@@ -97,6 +97,37 @@ class UserController {
         }
 
     }
+
+    // Salvar recomendações no perfil do usuario
+    static async salvar_recomendacoes(req, res) {
+
+        try {
+
+            const { id } = req.params;
+            const data = req.body;
+
+            const user = await users.findById(id);
+
+            if (!user) return res.status(404).json({ message: "Usuário não encontrado." });
+
+            const list = user.recomendacoes;
+            
+            data.recomendacoes.map(r => {
+                list.push(r);
+            });
+
+            console.log(list);
+            
+
+            await users.findByIdAndUpdate(id, { recomendacoes: list});
+
+            return res.status(200).json({ message: "Recomendações salvas.", recomendacoes: list })
+
+        } catch (error) {
+            return res.status(500).json({ message: "Erro interno.", error: error })
+        }
+
+    }
 }
 
 export default UserController;

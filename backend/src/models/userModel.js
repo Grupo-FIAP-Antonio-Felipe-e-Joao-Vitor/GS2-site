@@ -21,6 +21,9 @@ const userSchema = new mongoose.Schema({
             values: ["TI", "Marketing", "Vendas", "RH", "Financeiro", "Lianderanca"]
         }
     },
+    recomendacoes: {
+        type: Array
+    },
     email: { 
         type: String,
         required: true
