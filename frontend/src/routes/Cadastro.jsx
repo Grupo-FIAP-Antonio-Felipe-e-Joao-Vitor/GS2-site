@@ -50,19 +50,19 @@ const Cadastro = () => {
           className="flex flex-col gap-2 items-center w-full"
         >
 
-          <div className="flex flex-col w-full md:w-1/2 md:flex-row md:gap-2">
+          <div className="flex flex-col w-full md:flex-row md:gap-2">
             <Input
               label={"Nome"}
               type={"text"}
               placeholder={"Digite seu nome"}
-              width="w-full md:w-1/2"
+              width="w-full"
               register={register}
               name={"nome"}
             />
 
             <Select
               label={"Empresa"}
-              width="w-full md:w-1/2"
+              width="w-full"
               options={[
                 {
                   label: "Fiap",
@@ -86,7 +86,7 @@ const Cadastro = () => {
 
           <Select
             label={"Área de atuação"}
-            width="w-full md:w-1/2"
+            width="w-full"
             options={[
               {
                 label: "TI",
@@ -122,17 +122,17 @@ const Cadastro = () => {
             label={"Email"}
             type={"email"}
             placeholder={"Digite seu email"}
-            width="w-full md:w-1/2"
+            width="w-full"
             register={register}
             name={"email"}
           />
 
-          <div className="flex flex-col w-full md:w-1/2 md:flex-row md:gap-2">
+          <div className="flex flex-col w-full md:flex-row md:gap-2">
             <Input
               label={"Senha"}
               type={"password"}
               placeholder={"Digite sua senha"}
-              width="w-full md:w-1/2"
+              width="w-full"
               register={register}
               name={"senha"}
             />
@@ -141,7 +141,7 @@ const Cadastro = () => {
               label={"Confirmar senha"}
               type={"password"}
               placeholder={"Confirme sua senha"}
-              width="w-full md:w-1/2"
+              width="w-full"
               register={register}
               name={"confirmar_senha"}
             />
@@ -149,7 +149,7 @@ const Cadastro = () => {
 
 
 
-          <div className="w-full md:w-1/2 mt-5">
+          <div className="w-full mt-5">
             <Button
               label={"Cadastre-se"}
               type={"submit"}

@@ -63,7 +63,7 @@ const Login = ({ setUser }) => {
             label={"Email"}
             type={"email"}
             placeholder={"Digite seu email"}
-            width="w-full md:w-1/2"
+            width="w-full"
             register={register}
             name={"email"}
           />
@@ -72,12 +72,12 @@ const Login = ({ setUser }) => {
             label={"Senha"}
             type={"password"}
             placeholder={"Digite sua senha"}
-            width="w-full md:w-1/2"
+            width="w-full"
             register={register}
             name={"senha"}
           />
 
-          <div className="w-full md:w-1/2 mt-5">
+          <div className="w-full mt-5">
             <Button
               label={"Entrar"}
               type={"submit"}
