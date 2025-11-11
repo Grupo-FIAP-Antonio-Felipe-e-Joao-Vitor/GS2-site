@@ -1,4 +1,4 @@
-const ProgressBar = ({ label, minLabel, maxLabel, width = "w-full" }) => {
+const ProgressBar = ({ label, minLabel, maxLabel, register, name, width = "w-full" }) => {
 
   return (
     <div className={`flex flex-col gap-1 border-b-2 border-slate-400 pb-5 ${width}`}>
@@ -15,6 +15,7 @@ const ProgressBar = ({ label, minLabel, maxLabel, width = "w-full" }) => {
           min={1}
           max={5}
           step={1}
+          {...(register ? register(name) : {})}
           className="accent-blue-500 cursor-pointer w-full"
         />
       </div>
