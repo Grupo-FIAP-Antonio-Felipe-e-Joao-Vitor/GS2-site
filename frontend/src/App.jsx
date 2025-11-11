@@ -5,7 +5,7 @@ import Login from "./routes/Login"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { useState } from "react"
-import Form from "./routes/Form"
+import HealthForm from "./routes/HealthForm"
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/cadastro" element={<Cadastro />}/>
           <Route path="/login" element={<Login setUser={setUser}/>}/>
-          <Route path="/form" element={<Form user={user}/>}/>
+          <Route path="/HealthForm" element={<HealthForm user={user}/>}/>
 
         </Routes>
 

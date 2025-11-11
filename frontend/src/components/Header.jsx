@@ -14,7 +14,7 @@ const Header = ({ user, setUser }) => {
 
         <ul className="flex space-x-8 items-center">
           <li className="list-none uppercase text-lg">
-            <Link to="/form">Health form</Link>
+            <Link to="/HealthForm">Health form</Link>
           </li>
           <li className="list-none uppercase text-lg relative">
             {!user && (

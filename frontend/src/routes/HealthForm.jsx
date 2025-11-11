@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import ProgressBar from "../components/ProgressBar";
 import TextArea from "../components/TextArea";
 
-const Form = ({ user }) => {
+const HealthForm = ({ user }) => {
 
     const navigate = useNavigate()
     
@@ -95,4 +95,4 @@ const Form = ({ user }) => {
   );
 };
 
-export default Form;
+export default HealthForm;
