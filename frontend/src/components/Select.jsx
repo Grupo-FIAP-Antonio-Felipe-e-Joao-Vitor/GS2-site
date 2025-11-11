@@ -2,7 +2,7 @@ const Select = ({ label, options, placeholder, register, name, width = "w-full" 
     return (
         <div className={`flex flex-col mb-5 ${width}`}>
             <label
-                className="text-2xl font-bold text-white"
+                className="text-lg font-bold text-white"
             >
                 {label}
             </label>
