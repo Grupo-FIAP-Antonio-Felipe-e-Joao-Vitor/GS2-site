@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { useState } from "react"
 import HealthForm from "./routes/HealthForm"
+import Formulario from "./routes/Formulario";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/cadastro" element={<Cadastro />}/>
           <Route path="/login" element={<Login setUser={setUser}/>}/>
           <Route path="/HealthForm" element={<HealthForm user={user}/>}/>
+          <Route path="/formulario" element={<Formulario user={user}/>}/>
 
         </Routes>
 
