@@ -69,7 +69,7 @@ const HealthForm = ({ user }) => {
 
         <ProgressBar
           label={
-            "Em uma escala de 1 a 5, como está seu nível de estresse no trabalho nesta semana?"
+            "Como está seu nível de estresse no trabalho nesta semana?"
           }
           minLabel={"Pouco"}
           maxLabel={"Muito"}
