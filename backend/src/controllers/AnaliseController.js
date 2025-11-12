@@ -116,6 +116,39 @@ Resposta esperada: {
       return res.status(500).json({ message: "Erro interno.", error: error });
     }
   }
+
+  static async get_enterprise_analises (req, res) {
+
+    try {
+
+      const empresa = req.params.empresa;   // vem do /analises/:empresa
+      const atuacao = req.query.atuacao;    // vem do ?atuacao=TI
+
+      const list = await analises.find({ empresa: empresa, atuacao: atuacao })
+      let soma_estresse = 0
+      let soma_satisfacao = 0
+
+      list.forEach(a => {
+        soma_estresse += Number(a.nivel_estresse)
+        soma_satisfacao += Number(a.nivel_satisfacao)
+      })
+      
+      const media_estresse = soma_estresse / list.length
+      const media_satisfacao = soma_satisfacao / list.length
+
+       return res.status(200).json({
+      empresa: empresa,
+      atuacao: atuacao,
+      total_analises: list.length,
+      media_estresse: media_estresse,
+      media_satisfacao: media_satisfacao
+    });
+
+    } catch (error) {
+      return res.status(500).json({ message: "Erro interno.", error: error });
+    }
+
+  }
 }
 
 export default AnaliseController;
