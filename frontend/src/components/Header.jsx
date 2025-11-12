@@ -13,9 +13,6 @@ const Header = ({ user, setUser }) => {
         <Link to="/" className="uppercase text-lg">Home</Link>
 
         <ul className="flex space-x-8 items-center">
-          <li className="list-none uppercase text-lg">
-            <Link to="/HealthForm">Health form</Link>
-          </li>
           <li className="list-none uppercase text-lg relative">
             {!user && (
               <Link

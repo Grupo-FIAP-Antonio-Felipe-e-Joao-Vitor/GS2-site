@@ -20,11 +20,11 @@ function App() {
 
       <Header user={user} setUser={setUser}/>
 
-      <main >
+      <main>
 
         <Routes>
 
-          <Route path="/" element={<Dashboard />}/>
+          <Route path="/" element={<Dashboard user={user}/>}/>
           <Route path="/cadastro" element={<Cadastro />}/>
           <Route path="/login" element={<Login setUser={setUser}/>}/>
           <Route path="/HealthForm" element={<HealthForm user={user}/>}/>
