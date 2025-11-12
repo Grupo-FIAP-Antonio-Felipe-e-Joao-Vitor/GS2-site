@@ -89,7 +89,7 @@ const Formulario = ({ user }) => {
                       <input
                         type="radio"
                         value={opcao}
-                        {...register(`${grupo.titulo}_${i}`)}
+                        {...register(`${pergunta}`)}
                       />
                       {opcao}
                     </label>
