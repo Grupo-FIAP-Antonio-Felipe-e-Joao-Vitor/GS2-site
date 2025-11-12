@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import Aside from "../components/Aside";
+import Button from "../components/Button";
 
 const Formulario = ({ user }) => {
   const { register, handleSubmit } = useForm();
@@ -14,7 +15,7 @@ const Formulario = ({ user }) => {
 
   const perguntas = [
     {
-      titulo: "1. Protagonismo e responsabilidade",
+      titulo: "Protagonismo e responsabilidade",
       questoes: [
         "Você identifica oportunidades de melhoria no seu trabalho?",
         "Você costuma agir antes que os problemas aconteçam?",
@@ -22,7 +23,7 @@ const Formulario = ({ user }) => {
       ]
     },
     {
-      titulo: "2. Análise e uso de dados",
+      titulo: "Análise e uso de dados",
       questoes: [
         "Você analisa dados de forma estruturada no seu dia a dia?",
         "Você identifica padrões e tendências a partir das informações disponíveis?",
@@ -30,7 +31,7 @@ const Formulario = ({ user }) => {
       ]
     },
     {
-      titulo: "3. Relacionamento e colaboração",
+      titulo: "Relacionamento e colaboração",
       questoes: [
         "Você constrói relacionamentos de confiança com colegas e líderes?",
         "Você pratica escuta ativa nas interações com outras pessoas?",
@@ -38,7 +39,7 @@ const Formulario = ({ user }) => {
       ]
     },
     {
-      titulo: "4. Iniciativa e alinhamento estratégico",
+      titulo: "Iniciativa e alinhamento estratégico",
       questoes: [
         "Você propõe soluções alinhadas aos objetivos da empresa?",
         "Você demonstra iniciativa para buscar conhecimento sobre a estratégia organizacional?",
@@ -46,7 +47,7 @@ const Formulario = ({ user }) => {
       ]
     },
     {
-      titulo: "5. Resiliência e foco",
+      titulo: "Resiliência e foco",
       questoes: [
         "Você mantém resiliência diante de desafios?",
         "Você consegue manter o foco mesmo em momentos de pressão?",
@@ -54,7 +55,7 @@ const Formulario = ({ user }) => {
       ]
     },
     {
-      titulo: "6. Qualidade e entrega de resultados",
+      titulo: "Qualidade e entrega de resultados",
       questoes: [
         "Você entrega seus trabalhos com qualidade?",
         "Você costuma cumprir os prazos estabelecidos?",
@@ -67,26 +68,24 @@ const Formulario = ({ user }) => {
 
   return (
     <div className="flex min-h-screen bg-slate-900 text-white">
-      <Aside user={user} />
-
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex-1 p-10 flex flex-col items-center gap-8"
       >
-        <h1 className="text-4xl font-bold text-center">Formulário de Clima</h1>
+        <h1 className="text-4xl font-bold text-center uppercase">Olá {user?.nome} responda ao formulário de clima</h1>
 
         {perguntas.map((grupo, index) => (
           <div
             key={index}
             className="w-full md:w-2/3 bg-slate-800 p-6 rounded-2xl shadow-lg"
           >
-            <h2 className="text-2xl font-semibold mb-4">{grupo.titulo}</h2>
+            <h2 className="md:text-3xl text-2xl font-semibold mb-4 text-center">{grupo.titulo}</h2>
             {grupo.questoes.map((pergunta, i) => (
-              <div key={i} className="mb-4">
-                <p className="mb-2">{pergunta}</p>
-                <div className="flex gap-5">
+              <div key={i} className="mb-4 flex flex-col items-center">
+                <p className="mb-2 text-center text-lg">{pergunta}</p>
+                <div className="flex gap-5 md:gap-20">
                   {opcoes.map((opcao) => (
-                    <label key={opcao} className="flex items-center gap-2">
+                    <label key={opcao} className="flex items-center gap-2 cursor-pointer pb-2 border-b-2 border-slate-400">
                       <input
                         type="radio"
                         value={opcao}
@@ -101,12 +100,12 @@ const Formulario = ({ user }) => {
           </div>
         ))}
 
-        <button
-          type="submit"
-          className="mt-6 bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-lg font-bold text-white"
-        >
-          Enviar
-        </button>
+        <div className="w-full md:w-2/3">
+          <Button
+            type={"submit"}
+            label={"Enviar"}
+          />
+        </div>
       </form>
     </div>
   );
