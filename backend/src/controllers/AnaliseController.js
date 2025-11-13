@@ -127,10 +127,22 @@ Resposta esperada: {
       const list = await analises.find({ empresa: empresa, atuacao: atuacao })
       let soma_estresse = 0
       let soma_satisfacao = 0
+      let lista_positivos = []
+      let lista_negativos = []
 
       list.forEach(a => {
         soma_estresse += Number(a.nivel_estresse)
         soma_satisfacao += Number(a.nivel_satisfacao)
+      })
+
+      list.map(a => {
+        a.fatores_positivos.forEach(f => {
+          lista_positivos.push(f)
+        })
+
+        a.fatores_negativos.forEach(f => {
+          lista_negativos.push(f)
+        })
       })
       
       const media_estresse = soma_estresse / list.length
@@ -141,7 +153,9 @@ Resposta esperada: {
       atuacao: atuacao,
       total_analises: list.length,
       media_estresse: media_estresse,
-      media_satisfacao: media_satisfacao
+      media_satisfacao: media_satisfacao,
+      fatores_positivos: lista_positivos,
+      fatores_negativos: lista_negativos
     });
 
     } catch (error) {
