@@ -19,8 +19,8 @@ const Dash_gerir = ({ user }) => {
   }
 
   useEffect(() => {
-    if (user?.empresa) listar_usuarios();
-  }, [user?.empresa]);
+    listar_usuarios();
+  });
 
   return (
     <section className="w-full h-full flex justify-center items-start">

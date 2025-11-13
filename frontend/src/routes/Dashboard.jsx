@@ -36,7 +36,7 @@ const Home = ({ user }) => {
         ) : user?.atuacao === "Lideranca" && dashboard === "gerir" ? (
           <Dash_gerir user={user}/>
         ) : user?.atuacao === "Lideranca" && dashboard.includes("area") ? (
-          <Dash_area area={dashboard.split("_")[1]}/>
+          <Dash_area area={dashboard.split("_")[1]} user={user}/>
         ) : (null)}
       </div>
 
