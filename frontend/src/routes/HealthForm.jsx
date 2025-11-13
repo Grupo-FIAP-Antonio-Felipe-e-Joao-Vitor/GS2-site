@@ -5,6 +5,7 @@ import ProgressBar from "../components/ProgressBar";
 import TextArea from "../components/TextArea";
 import { post_health_form, salvar_recomendacoes } from "../services/Forms";
 import { useForm } from "react-hook-form";
+import Voltar from "../components/Voltar";
 
 const HealthForm = ({ user }) => {
 
@@ -50,7 +51,9 @@ const HealthForm = ({ user }) => {
   }
 
   return (
-    <div className="flex flex-col py-5 w-full min-h-screen bg-slate-900">
+    <div className="relative flex flex-col py-5 w-full min-h-screen bg-blue-950">
+
+      <Voltar />
 
       <h1 className="text-4xl text-white uppercase font-bold text-center">Olá {user?.nome}</h1>
 

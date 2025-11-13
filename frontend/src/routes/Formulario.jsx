@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import Voltar from "../components/Voltar";
 
 const Formulario = ({ user }) => {
   const { register, handleSubmit } = useForm();
@@ -66,7 +67,10 @@ const Formulario = ({ user }) => {
   const opcoes = ["Nunca", "Às vezes", "Sempre"];
 
   return (
-    <div className="flex min-h-screen bg-slate-900 text-white">
+    <div className="relative flex min-h-screen bg-blue-950 text-white">
+      
+      <Voltar />
+      
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex-1 p-10 flex flex-col items-center gap-8"
