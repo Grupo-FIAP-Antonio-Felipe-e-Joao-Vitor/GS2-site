@@ -42,7 +42,7 @@ const Dash_area = ({ area, user }) => {
           </div>
         ) : analise.total_analises <= 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <p className="text-gray-500 italic mt-5">
+            <p className="text-white italic mt-5">
               Nenhuma analise feita nesta área.
             </p>
           </div>
@@ -50,19 +50,19 @@ const Dash_area = ({ area, user }) => {
           <section className="w-full h-full flex flex-col gap-2">
             <section className="flex justify-around items-center w-full h-full">
               <div className="flex flex-col items-center gap-4">
-                <span className="text-2xl text-gray-400">Média de estresse</span>
+                <span className="text-2xl text-white">Média de estresse</span>
                 <GraficoDonout numero={analise.media_estresse}/>
               </div>
 
               <div className="flex flex-col items-center gap-4">
-                <span className="text-2xl text-gray-400">Média de satisfação</span>
+                <span className="text-2xl text-white">Média de satisfação</span>
                 <GraficoDonout numero={analise.media_satisfacao}/>
               </div>
             </section>
             <section className="w-full mt-10">
               <section className="flex justify-between px-2\ w-full h-full">
                 <div className="flex flex-col items-center gap-4">
-                  <span className="text-2xl text-gray-400">Pontos positivos</span>
+                  <span className="text-2xl text-white">Pontos positivos</span>
                   <section className="flex flex-col w-full gap-2">
                     {analise.fatores_positivos.map((f, i) => (
                       <CardPontos key={i} ponto={f}/>
@@ -71,7 +71,7 @@ const Dash_area = ({ area, user }) => {
                 </div>
 
                 <div className="flex flex-col items-center gap-4">
-                  <span className="text-2xl text-gray-400">Pontos negativos</span>
+                  <span className="text-2xl text-white">Pontos negativos</span>
                   <section className="flex flex-col w-full gap-2">
                     {analise.fatores_negativos.map((f, i) => (
                       <CardPontos key={i} ponto={f}/>

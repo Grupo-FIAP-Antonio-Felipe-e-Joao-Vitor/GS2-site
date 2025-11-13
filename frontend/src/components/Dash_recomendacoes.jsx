@@ -13,7 +13,7 @@ const Dash_recomendacoes = ({ user }) => {
             <CardRecomendacao key={i} recomendacao={r} />
           ))
         ) : (
-          <p className="text-gray-400 italic mt-5">
+          <p className="text-gray-300 italic mt-5">
             Nenhuma recomendação disponível no momento.
           </p>
         )}

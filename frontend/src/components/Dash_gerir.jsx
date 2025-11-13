@@ -41,7 +41,7 @@ const Dash_gerir = ({ user }) => {
             ))}
           </div>
         ) : (
-          <p className="text-gray-500 italic mt-5">
+          <p className="text-white italic mt-5">
             Nenhum usuário encontrado para esta empresa.
           </p>
         )}
