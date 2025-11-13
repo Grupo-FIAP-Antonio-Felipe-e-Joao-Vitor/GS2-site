@@ -4,7 +4,7 @@ const Dash_recomendacoes = ({ user }) => {
   return (
     <div className="w-full h-full flex justify-center">
       <section className="w-[80%] mt-10 flex flex-col gap-5">
-        <h2 className="text-2xl font-bold text-purple-400 mb-2 tracking-wide">
+        <h2 className="text-2xl font-bold text-blue-400 mb-2 tracking-wide">
           Recomendações para você
         </h2>
 

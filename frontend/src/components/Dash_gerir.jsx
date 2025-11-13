@@ -25,14 +25,14 @@ const Dash_gerir = ({ user }) => {
   return (
     <section className="w-full h-full flex justify-center items-start">
       <div className="ml-40 mt-10 w-[80%]">
-        <h2 className="text-2xl font-bold text-purple-400 mb-6 tracking-wide">
+        <h2 className="text-2xl font-bold text-blue-400 mb-6 tracking-wide">
           Usuários da empresa
         </h2>
 
         {loading ? (
           <div className="flex justify-center items-center h-40">
-            <div className="w-10 h-10 border-4 border-purple-400 border-t-transparent rounded-full animate-spin"></div>
-            <span className="ml-3 text-purple-400 font-medium">Carregando...</span>
+            <div className="w-10 h-10 border-4 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
+            <span className="ml-3 text-blue-400 font-medium">Carregando...</span>
           </div>
         ) : lista.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

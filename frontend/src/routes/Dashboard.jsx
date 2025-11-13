@@ -24,7 +24,7 @@ const Home = ({ user }) => {
     <main className="flex flex-col bg-blue-950 min-h-screen pb-10">
       <Aside user={user} setDashboard={setDashboard} />
 
-      <h2 className="text-white ml-25 mt-10 h-10 min-w-60 text-2xl font-bold">Olá <span className="text-purple-400">{user?.nome}!</span></h2>
+      <h2 className="text-white ml-25 mt-10 h-10 min-w-60 text-2xl font-bold">Olá <span className="text-blue-400">{user?.nome}!</span></h2>
 
       <div className="mt-13 w-full h-full">
         {dashboard === "forms" ? (

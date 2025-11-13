@@ -1,7 +1,7 @@
 const CardUsuario = ({ usuario }) => {
     return (
         <div
-            className="bg-gray-500 p-5 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border hover:border-purple-600"
+            className="bg-gray-500 p-5 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border hover:border-blue-600"
         >
             <h3 className="text-xl font-semibold text-gray-100 mb-1">
                 {usuario.nome}
