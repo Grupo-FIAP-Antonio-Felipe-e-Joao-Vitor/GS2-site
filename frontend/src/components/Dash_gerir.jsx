@@ -37,7 +37,7 @@ const Dash_gerir = ({ user }) => {
         ) : lista.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {lista.map((usuario) => (
-              <CardUsuario key={usuario._id} usuario={usuario}/>
+              <CardUsuario key={usuario._id} usuario={usuario} user={user}/>
             ))}
           </div>
         ) : (
