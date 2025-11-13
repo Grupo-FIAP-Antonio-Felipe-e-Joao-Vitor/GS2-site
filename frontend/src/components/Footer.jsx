@@ -11,7 +11,7 @@ const Footer = () => {
           <p className="font-medium">Antonio Neto</p>
           <div className="flex gap-4">
             <a
-              href="https://github.com/Grupo-FIAP-Antonio-Felipe-e-Joao-Vitor/GS2-site/commits?author=AntonioNeto18"
+              href="https://github.com/AntonioNeto18"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition"
@@ -34,7 +34,7 @@ const Footer = () => {
           <p className="font-medium">Felipe Bicaletto</p>
           <div className="flex gap-4">
             <a
-              href="https://github.com/Grupo-FIAP-Antonio-Felipe-e-Joao-Vitor/GS2-site/commits?author=FelipeBicaletto"
+              href="https://github.com/FelipeBicaletto"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition"
