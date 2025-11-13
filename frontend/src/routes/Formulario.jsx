@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import Aside from "../components/Aside";
 import Button from "../components/Button";
 
 const Formulario = ({ user }) => {
