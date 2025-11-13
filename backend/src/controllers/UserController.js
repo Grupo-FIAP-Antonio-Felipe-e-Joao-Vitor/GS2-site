@@ -3,7 +3,6 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 class UserController {
-
     // Função de registro
     static async registro(req, res) {
 
@@ -89,6 +88,25 @@ class UserController {
         try {
 
             const list = await users.find({});
+
+            return res.status(200).json({ users: list });
+
+        } catch (error) {
+            return res.status(500).json({ message: "Erro interno.", error: error })
+        }
+
+    }
+
+    // Função que retorna todos os usuarios de uma empresa
+    static async listar_usuarios_empresa (req, res) {
+
+        try {
+
+            const { empresa } = req.params;
+
+            const list = await users.find({ empresa: empresa })
+
+            if (list.length === 0) return res.status(404).json({ message: "Nenhum usuarios encontrado", users: list });
 
             return res.status(200).json({ users: list });
 
