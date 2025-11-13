@@ -146,6 +146,23 @@ class UserController {
         }
 
     }
+
+    // Remover usuario
+    static async remover_usuario (req, res) {
+
+        try {
+
+            const { id } = req.params;
+
+            await users.findByIdAndDelete(id);
+
+            res.status(200).json({ message: "Usuário removido." })
+
+        } catch (error) {
+            return res.status(500).json({ message: "Erro interno.", error: error })
+        }
+
+    }
 }
 
 export default UserController;

@@ -8,5 +8,6 @@ route.get("/usuarios/empresa/:empresa", UserController.listar_usuarios_empresa);
 route.post("/register", UserController.registro);
 route.post("/login", UserController.login);
 route.put("/usuarios/:id", UserController.salvar_recomendacoes);
+route.delete("/usuarios/:id", UserController.remover_usuario);
 
 export default route;
