@@ -4,7 +4,7 @@ const Dash_forms = () => {
   return (
     <div className="flex flex-col items-center justify-center md:items-start md:flex-row md:justify-between w-screen md:w-full text-white">
 
-      <section className="flex flex-col md:ml-40 md:mt-25 w-1/2">
+      <section className="flex flex-col md:ml-30 md:mt-25 w-1/2">
         <p className="text-xl font-bold border-b w-fit pb-4">
           Estes são seus formulários que ainda não foram respondidos
         </p>
@@ -30,7 +30,7 @@ const Dash_forms = () => {
 
       <div className="bg-white h-1 w-1/2 md:w-1 md:h-screen my-15 md:m-15"></div>
 
-      <section className="flex flex-col md:mt-25 w-1/2">
+      <section className="flex flex-col mr-5 md:mt-25 w-1/2">
         <p className="text-xl font-bold border-b w-fit pb-4">
           Estes são seus formulários que já foram respondidos
         </p>
