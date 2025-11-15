@@ -7,7 +7,7 @@ import Dash_salas from "../components/Dash_salas"
 import Dash_area from "../components/Dash_area"
 import Dash_gerir from "../components/Dash_gerir"
 
-const Home = ({ user }) => {
+const Dashboard = ({ user }) => {
 
   const navigate = useNavigate()
   const [dashboard, setDashboard] = useState("forms")
@@ -45,4 +45,4 @@ const Home = ({ user }) => {
   )
 }
 
-export default Home
+export default Dashboard

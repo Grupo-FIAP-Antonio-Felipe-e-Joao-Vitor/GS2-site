@@ -7,6 +7,7 @@ import Footer from "./components/Footer"
 import { useState } from "react"
 import HealthForm from "./routes/HealthForm"
 import Formulario from "./routes/Formulario";
+import Home from "./routes/Home"
 
 function App() {
 
@@ -20,11 +21,12 @@ function App() {
 
       <Header user={user} setUser={setUser}/>
 
-      <main>
+      <main className="min-h-screen bg-blue-950">
 
         <Routes>
 
-          <Route path="/" element={<Dashboard user={user}/>}/>
+          <Route path="/" element={<Home />}/>
+          <Route path="/dashboard" element={<Dashboard user={user}/>}/>
           <Route path="/cadastro" element={<Cadastro />}/>
           <Route path="/login" element={<Login setUser={setUser}/>}/>
           <Route path="/HealthForm" element={<HealthForm user={user}/>}/>

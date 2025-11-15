@@ -10,7 +10,12 @@ const Header = ({ user, setUser }) => {
   return (
     <header className="w-full p-2 text-white bg-slate-800">
       <nav className="flex justify-around items-center">
-        <Link to="/" className="uppercase text-lg">Home</Link>
+        <div className="flex gap-5">
+          <Link to="/" className="uppercase text-lg">Home</Link>
+        {user && (
+          <Link to="/dashboard" className="uppercase text-lg">Dashboard</Link>
+        )}
+        </div>
 
         <ul className="flex space-x-8 items-center">
           <li className="list-none uppercase text-lg relative">
