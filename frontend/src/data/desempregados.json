@@ -1,0 +1,561 @@
+[
+  {
+    "id": 1,
+    "nome": "Ana Oliveira",
+    "foto": "https://randomuser.me/api/portraits/women/1.jpg",
+    "cargo": "Engenheira de Software",
+    "resumo": "Especialista em desenvolvimento backend com foco em arquitetura escalável.",
+    "localização": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Python", "Django", "PostgreSQL"],
+    "softSkills": ["Comunicação", "Resolução de problemas"],
+    "experiencias": [
+      {
+        "empresa": "TechCorp",
+        "cargo": "Backend Developer",
+        "inicio": "2021-03",
+        "fim": "2024-02",
+        "descricao": "Desenvolvimento de APIs e serviços escaláveis."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Ciência da Computação",
+        "instituicao": "USP",
+        "ano": 2020
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "API de Pagamentos",
+        "link": "http://",
+        "descricao": "Sistema de pagamentos modular."
+      }
+    ],
+    "certificacoes": ["AWS Practitioner"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areasInteresses": ["IA Ética", "Educação"]
+  },
+
+  {
+    "id": 2,
+    "nome": "Bruno Almeida",
+    "foto": "https://randomuser.me/api/portraits/men/2.jpg",
+    "cargo": "Analista de Dados",
+    "resumo": "Focado em análises estatísticas e geração de insights acionáveis.",
+    "localização": "Rio de Janeiro/RJ",
+    "area": "Dados",
+    "habilidadesTecnicas": ["SQL", "Power BI", "Python"],
+    "softSkills": ["Pensamento crítico", "Comunicação"],
+    "experiencias": [
+      {
+        "empresa": "DataVision",
+        "cargo": "Analista Júnior",
+        "inicio": "2020-01",
+        "fim": "2023-12",
+        "descricao": "Criação de dashboards e análises descritivas."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Estatística",
+        "instituicao": "UFRJ",
+        "ano": 2019
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Dashboard de KPIs",
+        "link": "http://",
+        "descricao": "Dashboard corporativo para tomada de decisão."
+      }
+    ],
+    "certificacoes": ["Scrum Foundation"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areasInteresses": ["Análise preditiva", "IA aplicada"]
+  },
+
+  {
+    "id": 3,
+    "nome": "Carla Mendes",
+    "foto": "https://randomuser.me/api/portraits/women/3.jpg",
+    "cargo": "UX Designer",
+    "resumo": "Cria experiências intuitivas com foco em acessibilidade.",
+    "localização": "Curitiba/PR",
+    "area": "Design",
+    "habilidadesTecnicas": ["Figma", "Design System", "Pesquisa de usuário"],
+    "softSkills": ["Empatia", "Comunicação"],
+    "experiencias": [
+      {
+        "empresa": "InnoDesign",
+        "cargo": "UX Researcher",
+        "inicio": "2022-05",
+        "fim": "2024-06",
+        "descricao": "Pesquisa com usuários e validação de protótipos."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Design Digital",
+        "instituicao": "PUC-PR",
+        "ano": 2021
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "App de Acessibilidade Urbana",
+        "link": "http://",
+        "descricao": "Protótipo de inclusão para mobilidade urbana."
+      }
+    ],
+    "certificacoes": ["UX-PM nível 1"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areasInteresses": ["Acessibilidade", "Interação humano-computador"]
+  },
+
+  {
+    "id": 4,
+    "nome": "Diego Santos",
+    "foto": "https://randomuser.me/api/portraits/men/4.jpg",
+    "cargo": "Engenheiro DevOps",
+    "resumo": "Automatiza pipelines e gerencia infraestrutura em nuvem.",
+    "localização": "São Paulo/SP",
+    "area": "DevOps",
+    "habilidadesTecnicas": ["Docker", "Kubernetes", "Azure"],
+    "softSkills": ["Organização", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "CloudWorks",
+        "cargo": "DevOps Engineer",
+        "inicio": "2019-02",
+        "fim": "2024-03",
+        "descricao": "Implementação de CI/CD e infraestrutura IaC."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Software",
+        "instituicao": "FIAP",
+        "ano": 2018
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Pipeline CI/CD",
+        "link": "http://",
+        "descricao": "Pipeline automatizado multi-stage."
+      }
+    ],
+    "certificacoes": ["CKA"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areasInteresses": ["SRE", "Infraestrutura automatizada"]
+  },
+
+  {
+    "id": 5,
+    "nome": "Eduarda Nunes",
+    "foto": "https://randomuser.me/api/portraits/women/5.jpg",
+    "cargo": "Cientista de Dados",
+    "resumo": "Constrói modelos de machine learning para problemas reais.",
+    "localização": "Belo Horizonte/MG",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Python", "TensorFlow", "SQL"],
+    "softSkills": ["Curiosidade", "Pensamento analítico"],
+    "experiencias": [
+      {
+        "empresa": "InsightLab",
+        "cargo": "Data Scientist",
+        "inicio": "2021-04",
+        "fim": "2024-07",
+        "descricao": "Desenvolvimento de modelos preditivos."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Data Science",
+        "instituicao": "UFMG",
+        "ano": 2020
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Modelo de Classificação",
+        "link": "http://",
+        "descricao": "Classificador para análise de churn."
+      }
+    ],
+    "certificacoes": ["Google Data Analytics"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areasInteresses": ["IA Ética", "Modelos interpretáveis"]
+  },
+  {
+    "id": 6,
+    "nome": "Fábio Gomes",
+    "foto": "https://randomuser.me/api/portraits/men/6.jpg",
+    "cargo": "Desenvolvedor Frontend Sênior",
+    "resumo": "Especialista em React e arquitetura de componentes reutilizáveis.",
+    "localização": "Porto Alegre/RS",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "JavaScript", "TypeScript", "Redux"],
+    "softSkills": ["Liderança", "Mentoria"],
+    "experiencias": [
+      {
+        "empresa": "WebSolutions",
+        "cargo": "Frontend Lead",
+        "inicio": "2018-10",
+        "fim": "2024-10",
+        "descricao": "Desenvolvimento de aplicações web complexas e gestão de time."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Sistemas de Informação",
+        "instituicao": "UFRGS",
+        "ano": 2017
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Plataforma E-commerce",
+        "link": "http://",
+        "descricao": "Interface de e-commerce de alta performance."
+      }
+    ],
+    "certificacoes": ["Certified React Developer"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areasInteresses": ["Performance Web", "PWA"]
+  },
+  {
+    "id": 7,
+    "nome": "Giovana Lima",
+    "foto": "https://randomuser.me/api/portraits/women/7.jpg",
+    "cargo": "Gerente de Projetos (PM)",
+    "resumo": "Liderança de equipes ágeis e entrega de produtos de alto impacto.",
+    "localização": "São Paulo/SP",
+    "area": "Gestão",
+    "habilidadesTecnicas": ["Scrum", "Kanban", "JIRA", "MS Project"],
+    "softSkills": ["Negociação", "Gestão de Conflitos"],
+    "experiencias": [
+      {
+        "empresa": "AgileMinds",
+        "cargo": "Project Manager",
+        "inicio": "2020-07",
+        "fim": "2024-11",
+        "descricao": "Gestão de portfólio de projetos de TI, focado em metodologias ágeis."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Administração de Empresas",
+        "instituicao": "FGV",
+        "ano": 2016
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Implementação de ERP",
+        "link": "http://",
+        "descricao": "Gerenciamento da migração e implementação de novo ERP."
+      }
+    ],
+    "certificacoes": ["PMP", "CSM"],
+    "idiomas": [{ "idioma": "Espanhol", "nivel": "Básico" }],
+    "areasInteresses": ["Transformação Digital", "Liderança"]
+  },
+  {
+    "id": 8,
+    "nome": "Henrique Costa",
+    "foto": "https://randomuser.me/api/portraits/men/8.jpg",
+    "cargo": "Analista de Segurança da Informação",
+    "resumo": "Proteção de sistemas e redes contra ameaças cibernéticas.",
+    "localização": "Recife/PE",
+    "area": "Segurança",
+    "habilidadesTecnicas": ["Pentest", "Firewalls", "ISO 27001", "OWASP"],
+    "softSkills": ["Atenção a detalhes", "Aprendizado Contínuo"],
+    "experiencias": [
+      {
+        "empresa": "SecureNet",
+        "cargo": "Security Analyst",
+        "inicio": "2021-01",
+        "fim": "2024-05",
+        "descricao": "Realização de testes de invasão e auditorias de segurança."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Redes de Computadores",
+        "instituicao": "UFPE",
+        "ano": 2020
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Plano de Resposta a Incidentes",
+        "link": "http://",
+        "descricao": "Criação de políticas de segurança e plano de resposta a incidentes."
+      }
+    ],
+    "certificacoes": ["CISSP"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areasInteresses": ["Criptografia", "Hacking Ético"]
+  },
+  {
+    "id": 9,
+    "nome": "Isabela Rocha",
+    "foto": "https://randomuser.me/api/portraits/women/9.jpg",
+    "cargo": "Product Owner (PO)",
+    "resumo": "Define a visão do produto e maximiza o valor do trabalho da equipe de desenvolvimento.",
+    "localização": "Curitiba/PR",
+    "area": "Produto",
+    "habilidadesTecnicas": ["Roadmapping", "Priorização", "Análise de Mercado"],
+    "softSkills": ["Visão Estratégica", "Comunicação"],
+    "experiencias": [
+      {
+        "empresa": "ProductFocus",
+        "cargo": "Product Owner",
+        "inicio": "2022-03",
+        "fim": "2024-08",
+        "descricao": "Gestão do backlog de produto e interação constante com stakeholders."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Marketing Digital",
+        "instituicao": "Mackenzie",
+        "ano": 2021
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Feature de Onboarding",
+        "link": "http://",
+        "descricao": "Lançamento de nova funcionalidade de onboarding de usuários."
+      }
+    ],
+    "certificacoes": ["CSPO"],
+    "idiomas": [{ "idioma": "Alemão", "nivel": "Básico" }],
+    "areasInteresses": ["Engajamento do Usuário", "Inovação"]
+  },
+  {
+    "id": 10,
+    "nome": "João Ferreira",
+    "foto": "https://randomuser.me/api/portraits/men/10.jpg",
+    "cargo": "Engenheiro de Machine Learning",
+    "resumo": "Desenvolvimento e deploy de modelos de ML em produção (MLOps).",
+    "localização": "São José dos Campos/SP",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Python", "Docker", "Kubeflow", "PyTorch"],
+    "softSkills": ["Raciocínio Lógico", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "MLOps Corp",
+        "cargo": "ML Engineer",
+        "inicio": "2021-09",
+        "fim": "2024-11",
+        "descricao": "Criação de pipelines de treinamento e inferência de modelos."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia da Computação",
+        "instituicao": "ITA",
+        "ano": 2020
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Sistema de Recomendação",
+        "link": "http://",
+        "descricao": "Desenvolvimento de um motor de recomendação em tempo real."
+      }
+    ],
+    "certificacoes": ["Azure AI Engineer"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areasInteresses": ["Visão Computacional", "NLP"]
+  },
+  {
+    "id": 11,
+    "nome": "Kamila Soares",
+    "foto": "https://randomuser.me/api/portraits/women/11.jpg",
+    "cargo": "Consultora Salesforce",
+    "resumo": "Customização e implementação de soluções Salesforce para CRM.",
+    "localização": "Belo Horizonte/MG",
+    "area": "Consultoria",
+    "habilidadesTecnicas": ["Salesforce Apex", "Lightning Web Components", "SOQL"],
+    "softSkills": ["Atendimento ao Cliente", "Gestão de Tempo"],
+    "experiencias": [
+      {
+        "empresa": "CRMExperts",
+        "cargo": "Salesforce Consultant",
+        "inicio": "2019-05",
+        "fim": "2023-11",
+        "descricao": "Desenho e entrega de soluções personalizadas na plataforma Salesforce."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Análise e Desenvolvimento de Sistemas",
+        "instituicao": "UNA",
+        "ano": 2018
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Migração de Sistema",
+        "link": "http://",
+        "descricao": "Migração de base de clientes para a nuvem Salesforce."
+      }
+    ],
+    "certificacoes": ["Salesforce Administrator"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areasInteresses": ["Estratégia CRM", "Cloud Computing"]
+  },
+  {
+    "id": 12,
+    "nome": "Lucas Martins",
+    "foto": "https://randomuser.me/api/portraits/men/12.jpg",
+    "cargo": "Desenvolvedor Mobile Android",
+    "resumo": "Criação de aplicativos nativos de alta performance para a plataforma Android.",
+    "localização": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Kotlin", "Android SDK", "Jetpack Compose", "Coroutines"],
+    "softSkills": ["Detalhe", "Autonomia"],
+    "experiencias": [
+      {
+        "empresa": "MobileApps",
+        "cargo": "Android Developer",
+        "inicio": "2021-02",
+        "fim": "2024-04",
+        "descricao": "Desenvolvimento e manutenção de aplicativos Android de grande escala."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Tecnologia em Jogos Digitais",
+        "instituicao": "PUC-SP",
+        "ano": 2020
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "App de Fitness",
+        "link": "http://",
+        "descricao": "Aplicativo de rastreamento de atividades físicas com integração com wearables."
+      }
+    ],
+    "certificacoes": ["Google Associate Android Developer"],
+    "idiomas": [{ "idioma": "Japonês", "nivel": "Básico" }],
+    "areasInteresses": ["AR/VR", "Internet das Coisas"]
+  },
+  {
+    "id": 13,
+    "nome": "Mariana Pires",
+    "foto": "https://randomuser.me/api/portraits/women/13.jpg",
+    "cargo": "Analista de Marketing Digital",
+    "resumo": "Estrategista de campanhas de performance e SEO.",
+    "localização": "Rio de Janeiro/RJ",
+    "area": "Marketing",
+    "habilidadesTecnicas": ["SEO", "Google Ads", "Analytics", "E-mail Marketing"],
+    "softSkills": ["Criatividade", "Orientação a Resultados"],
+    "experiencias": [
+      {
+        "empresa": "Growth Agency",
+        "cargo": "Digital Marketing Analyst",
+        "inicio": "2022-01",
+        "fim": "2024-11",
+        "descricao": "Otimização de funis de conversão e gestão de budget de mídia."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Comunicação Social",
+        "instituicao": "UFF",
+        "ano": 2021
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Estratégia de Conteúdo",
+        "link": "http://",
+        "descricao": "Desenvolvimento e execução de estratégia de marketing de conteúdo."
+      }
+    ],
+    "certificacoes": ["Certificação Google Analytics"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areasInteresses": ["Automação de Marketing", "Web3"]
+  },
+  {
+    "id": 14,
+    "nome": "Nelson Ribeiro",
+    "foto": "https://randomuser.me/api/portraits/men/14.jpg",
+    "cargo": "Arquiteto de Soluções",
+    "resumo": "Desenho de arquiteturas de sistemas complexos e distribuídos em Cloud.",
+    "localização": "Brasília/DF",
+    "area": "Arquitetura",
+    "habilidadesTecnicas": ["AWS", "Microsserviços", "Domain-Driven Design", "Java"],
+    "softSkills": ["Visão Sistêmica", "Decisão"],
+    "experiencias": [
+      {
+        "empresa": "GlobalTech",
+        "cargo": "Solution Architect",
+        "inicio": "2017-08",
+        "fim": "2024-03",
+        "descricao": "Definição de padrões técnicos e avaliação de novas tecnologias."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Elétrica",
+        "instituicao": "UNB",
+        "ano": 2016
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Migração para Nuvem",
+        "link": "http://",
+        "descricao": "Planejamento e execução de migração de on-premise para AWS."
+      }
+    ],
+    "certificacoes": ["AWS Certified Solutions Architect"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Fluente" }],
+    "areasInteresses": ["Computação Quântica", "Edge Computing"]
+  },
+  {
+    "id": 15,
+    "nome": "Olívia Silva",
+    "foto": "https://randomuser.me/api/portraits/women/15.jpg",
+    "cargo": "Tech Writer",
+    "resumo": "Criação de documentação técnica clara e acessível para desenvolvedores e usuários.",
+    "localização": "Florianópolis/SC",
+    "area": "Conteúdo",
+    "habilidadesTecnicas": ["Markdown", "Git", "DITA", "APIs"],
+    "softSkills": ["Escrita impecável", "Organização"],
+    "experiencias": [
+      {
+        "empresa": "DocsPlus",
+        "cargo": "Technical Writer",
+        "inicio": "2020-10",
+        "fim": "2024-09",
+        "descricao": "Elaboração de guias de API, tutoriais e manuais de usuário."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Letras",
+        "instituicao": "UFSC",
+        "ano": 2019
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Portal de Desenvolvedor",
+        "link": "http://",
+        "descricao": "Reestruturação completa da documentação de um portal de desenvolvedores."
+      }
+    ],
+    "certificacoes": ["Certificado em Redação Técnica"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areasInteresses": ["UX Writing", "Conteúdo Interativo"]
+  }
+]
