@@ -1,24 +1,47 @@
 const CardDesempregado = ({ setOpen, setSelected, desempregado }) => {
-    return (
-        <div
-            onClick={() => {
-                setOpen(true)
-                setSelected(desempregado)
-            }}
-            className="relative w-full md:w-56 h-96 group rounded-lg border-2 border-gray-500 hover:border-gray-100">
-            <div className="absolute z-10 w-full h-full md:bg-black md:opacity-20 cursor-pointer group-hover:opacity-10 transition-all duration-300"></div>
-            <img src={desempregado.foto} className="w-full h-full rounded-lg object-center object-cover" alt={desempregado.nome} />
-            <div className="max-md:flex flex-col md:hidden px-2 py-1 absolute bottom-0 bg-black w-full md:opacity-70 h-fit md:h-0 group-hover:flex group-hover:h-fit z-20 transition-all duration-300">
+  const handleClick = () => {
+    setSelected(desempregado);
+    setOpen(true);
+  };
 
-                <span className="text-xl font-bold text-white md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">{desempregado.nome}</span>
+  return (
+    <div
+      onClick={handleClick}
+      className="relative cursor-pointer w-full md:w-56 h-96 rounded-lg border-2 border-gray-600 hover:border-gray-200 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg group"
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300 z-10"></div>
 
-                <span className="text-lg font-extrabold text-gray-400 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {desempregado.cargo}
-                </span>
+      {/* Imagem */}
+      <img
+        src={desempregado.foto}
+        className="w-full h-full object-cover object-center"
+        alt={desempregado.nome}
+      />
 
-            </div>
+      {/* Conteúdo */}
+      <div className="absolute bottom-0 w-full z-20 bg-black/80 backdrop-blur-sm border-t border-gray-500 px-3 py-2 flex flex-col gap-1">
+        <span className="text-xl font-bold text-white">
+          {desempregado.nome}
+        </span>
+
+        <span className="text-md font-semibold text-gray-300">
+          {desempregado.cargo}
+        </span>
+
+        <div className="pt-1 border-t border-gray-700 flex flex-wrap gap-1 text-sm text-gray-400">
+          {desempregado.habilidadesTecnicas.map((h, i) => (
+            <span
+              key={i}
+              className="bg-gray-800/60 px-2 py-0.5 rounded-md text-xs"
+            >
+              {h}
+            </span>
+          ))}
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default CardDesempregado
+export default CardDesempregado;
