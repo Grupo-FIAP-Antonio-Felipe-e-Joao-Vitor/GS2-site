@@ -1,11 +1,10 @@
+import Modal from "./Modal"
+
 const DesempregadoModal = ({ selected, setOpen }) => {
     return (
-        <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
+        <Modal>
 
-            <div className="relative w-[95%] max-w-5xl h-[90%] bg-white rounded-2xl shadow-xl overflow-hidden">
-                
-                
-                <div className="p-6 overflow-y-scroll h-full space-y-10">
+            <div className="p-6 overflow-y-scroll h-full space-y-10">
                     
                     <div className="absolute top-0 left-0 w-full bg-white p-6 border-b flex justify-between items-center">
                         <h2 className="text-3xl font-bold">{selected.nome}</h2>
@@ -136,8 +135,7 @@ const DesempregadoModal = ({ selected, setOpen }) => {
                     </div>
                 </div>
 
-            </div>
-        </div>
+        </Modal>
     )
 }
 
