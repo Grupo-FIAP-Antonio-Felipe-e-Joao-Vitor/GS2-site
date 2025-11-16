@@ -17,7 +17,7 @@ const CardForms = ({ titulo, descricao, data, form, realizado }) => {
             </button>
           ):(
             <Link to={form} className="flex text-white bg-emerald-700 transition-all duration-300 hover:bg-emerald-800 w-fit px-5 h-8 justify-center items-center rounded-2xl font-medium cursor-pointer">
-              Responder agora
+              Responder
             </Link>
           )}
         </div>

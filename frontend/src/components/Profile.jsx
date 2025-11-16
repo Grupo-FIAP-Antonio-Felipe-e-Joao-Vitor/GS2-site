@@ -20,7 +20,7 @@ const Profile = ({ user, setUser }) => {
       {/* caixa principal */}
       <div className="bg-white z-20 h-fit min-w-60 w-fit p-2 rounded-2xl shadow-2xl shadow-gray-500 border-2 border-gray-600 flex flex-col justify-center px-4">
 
-        <li className="flex gap-2 list-none text-gray-800 uppercase font-bold">
+        <li className="flex flex-col md:flex md:gap-2 list-none text-gray-800 uppercase font-bold">
             Nome: <span className="text-gray-800 normal-case font-semibold"> { user.nome }</span>
         </li>
 
@@ -32,7 +32,7 @@ const Profile = ({ user, setUser }) => {
             Atuação: <span className="text-gray-800 normal-case font-semibold"> { user.atuacao }</span>
         </li>
 
-        <li className="flex gap-2 list-none text-gray-800 uppercase font-bold">
+        <li className="flex flex-col md:flex md:gap-2 list-none text-gray-800 uppercase font-bold">
             Email: <span className="text-gray-800 normal-case font-semibold"> { user.email }</span>
         </li>
 

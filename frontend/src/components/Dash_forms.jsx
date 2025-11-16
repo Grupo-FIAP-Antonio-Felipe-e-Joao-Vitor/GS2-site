@@ -4,12 +4,12 @@ const Dash_forms = () => {
   return (
     <div className="flex flex-col items-center justify-center md:items-start md:flex-row md:justify-between w-screen md:w-full text-white">
 
-      <section className="flex flex-col md:ml-30 md:mt-25 w-1/2">
-        <p className="text-xl font-bold border-b w-fit pb-4">
+      <section className="flex flex-col md:ml-30 md:mt-25 md:w-1/2">
+        <p className="text-xl font-bold border-b w-fit pb-4 ml-15 mr-5 md:ml-0 md:mr-0">
           Estes são seus formulários que ainda não foram respondidos
         </p>
 
-         <div className="flex flex-wrap gap-10">
+         <div className="flex flex-wrap ml-20 md:ml-0 md:gap-10">
           <CardForms
             titulo={"Formulário de desempenho"}
             descricao={"Este formulário tem o objetivo de avaliar o desempenho individual dos funcionários"}
@@ -30,12 +30,12 @@ const Dash_forms = () => {
 
       <div className="bg-white h-1 w-1/2 md:w-1 md:h-screen my-15 md:m-15"></div>
 
-      <section className="flex flex-col mr-5 md:mt-25 w-1/2">
-        <p className="text-xl font-bold border-b w-fit pb-4">
+      <section className="flex flex-col mr-5 md:mt-25 md:w-1/2">
+        <p className="text-xl font-bold border-b w-fit pb-4 ml-15 mr-5">
           Estes são seus formulários que já foram respondidos
         </p>
 
-        <div className="flex flex-wrap gap-10">
+        <div className="flex ml-20 md:ml-0 flex-wrap md:gap-10">
           <CardForms
             titulo={"Formulário de desempenho"}
             descricao={"Este formulário tem o objetivo de avaliar o desempenho individual dos funcionários"}

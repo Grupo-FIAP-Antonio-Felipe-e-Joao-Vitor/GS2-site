@@ -48,10 +48,10 @@ const Aside = ({ user, setDashboard }) => {
         {user?.empresa}
       </h2>
 
-      <section className="flex flex-col items-center justify-center text-center gap-5">
+      <section className="flex flex-col items-center justify-center text-center">
         <div
           onClick={() => setDashboard("forms")}
-          className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+          className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
           ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
           `}
         >
@@ -63,7 +63,7 @@ const Aside = ({ user, setDashboard }) => {
 
         <div
           onClick={() => setDashboard("recomendacoes")}
-          className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+          className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
           ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
           `}>
           <p
@@ -74,7 +74,7 @@ const Aside = ({ user, setDashboard }) => {
 
         <div
           onClick={() => setDashboard("salas")}
-          className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+          className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
           ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
           `}>
           <p
@@ -84,11 +84,11 @@ const Aside = ({ user, setDashboard }) => {
         </div>
 
         {user?.atuacao === "Lideranca" && (
-          <div className="flex flex-col items-center justify-center text-center gap-5">
+          <div className="flex flex-col items-center justify-center text-center gap">
 
             <div
               onClick={() => setDashboard("gerir")}
-              className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+              className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
               ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
               `}>
               <p
@@ -99,7 +99,7 @@ const Aside = ({ user, setDashboard }) => {
 
             <div
               onClick={() => setDashboard("area_TI")}
-              className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+              className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
               ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
               `}>
               <p
@@ -111,7 +111,7 @@ const Aside = ({ user, setDashboard }) => {
 
             <div
               onClick={() => setDashboard("area_Marketing")}
-              className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+              className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
               ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
               `}>
               <p
@@ -123,7 +123,7 @@ const Aside = ({ user, setDashboard }) => {
 
             <div
               onClick={() => setDashboard("area_Vendas")}
-              className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+              className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
               ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
               `}>
               <p
@@ -134,7 +134,7 @@ const Aside = ({ user, setDashboard }) => {
 
             <div
               onClick={() => setDashboard("area_RH")}
-              className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+              className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
               ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
               `}>
               <p
@@ -145,7 +145,7 @@ const Aside = ({ user, setDashboard }) => {
 
             <div
               onClick={() => setDashboard("area_Financeiro")}
-              className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+              className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
               ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
               `}>
               <p
@@ -156,13 +156,13 @@ const Aside = ({ user, setDashboard }) => {
 
             <div
               onClick={() => setDashboard("area_Lianderanca")}
-              className={`mt-5 md:mt-20 group flex justify-center items-center h-7 w-40 border rounded-2xl border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
+              className={`mt-5 group flex justify-center items-center h-7 w-40 rounded-2xl hover:border bg-gray-300 text-black hover:text-white hover:border-gray-300 hover:bg-inherit hover:cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap
               ${isMobile && open ? "opacity-100 transition-all duration-300 whitespace-nowrap" : ""}
               `}>
               <p
 
                 className=" font-bold whitespace-nowrap">
-                Lianderança
+                Liderança
               </p>
             </div>
 

@@ -30,7 +30,7 @@ const Dash_area = ({ area, user }) => {
 
   return (
     <section className="w-full h-full flex justify-center">
-      <div className="ml-40 mt-10 w-[80%] h-full">
+      <div className="ml-10 md:ml-40 md:mt-10 w-[80%] h-full">
         <h2 className="text-2xl font-bold text-blue-400 mb-6 tracking-wide">
           Análises de {area} <span>({analise?.total_analises})</span>
         </h2>
@@ -48,19 +48,19 @@ const Dash_area = ({ area, user }) => {
           </div>
         ) : (
           <section className="w-full h-full flex flex-col gap-2">
-            <section className="flex justify-around items-center w-full h-full">
-              <div className="flex flex-col items-center gap-4">
+            <section className="flex flex-col md:flex justify-around items-center w-full h-full">
+              <div className="flex flex-col mt-2 md:mt-0 items-center gap-4">
                 <span className="text-2xl text-white">Média de estresse</span>
                 <GraficoDonout numero={analise.media_estresse}/>
               </div>
 
-              <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col mt-7 md:mt-0 items-center gap-4">
                 <span className="text-2xl text-white">Média de satisfação</span>
                 <GraficoDonout numero={analise.media_satisfacao}/>
               </div>
             </section>
             <section className="w-full mt-10">
-              <section className="flex justify-between px-2\ w-full h-full">
+              <section className="flex flex-col md:flex justify-between px-2\ w-full h-full">
                 <div className="flex flex-col items-center gap-4">
                   <span className="text-2xl text-white">Pontos positivos</span>
                   <section className="flex flex-col w-full gap-2">
@@ -70,7 +70,7 @@ const Dash_area = ({ area, user }) => {
                   </section>
                 </div>
 
-                <div className="flex flex-col items-center gap-4">
+                <div className="flex mt-7 md:mt-0 flex-col items-center gap-4">
                   <span className="text-2xl text-white">Pontos negativos</span>
                   <section className="flex flex-col w-full gap-2">
                     {analise.fatores_negativos.map((f, i) => (
