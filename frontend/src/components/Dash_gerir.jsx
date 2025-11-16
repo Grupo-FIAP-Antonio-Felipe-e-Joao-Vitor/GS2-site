@@ -24,7 +24,7 @@ const Dash_gerir = ({ user }) => {
 
   return (
     <section className="w-full h-full flex justify-center items-start">
-      <div className="ml-40 mt-10 w-[80%]">
+      <div className="ml-10 md:ml-40 md:mt-10 w-[80%]">
         <h2 className="text-2xl font-bold text-blue-400 mb-6 tracking-wide">
           Usuários da empresa
         </h2>

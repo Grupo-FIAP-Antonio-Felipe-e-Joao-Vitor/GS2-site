@@ -32,7 +32,7 @@ const CardUsuario = ({ usuario, user }) => {
                 {usuario.nome}
             </h3>
             <p className="text-gray-800 text-sm">{usuario.email}</p>
-            <p className="text-gray-800 text-sm font-bold mb-5">
+            <p className="text-gray-800 text-sm font-bold mb-5 mt-2">
                 {usuario.atuacao || "Atuação: N/A"}
             </p>
             {usuario._id !== user._id && (

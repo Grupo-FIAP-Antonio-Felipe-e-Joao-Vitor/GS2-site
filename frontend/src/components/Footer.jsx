@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="flex flex-col items-center justify-center gap-4 bg-[#0a0a0a]/90 border-t border-white/20 text-white py-6 mt-auto">
       <h2 className="text-lg font-semibold">Integrantes do Projeto</h2>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex-col md:flex flex-wrap justify-center gap-8">
         {/* Antonio */}
         <div className="flex flex-col items-center gap-2">
           <p className="font-medium">Antonio Neto</p>
