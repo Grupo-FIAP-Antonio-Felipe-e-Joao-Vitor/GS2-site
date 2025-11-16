@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Chart } from "react-google-charts";
-import { buscar_dados } from "../services/dash_salas";
+import { atualuzar_dados, buscar_dados } from "../services/dash_salas";
 
 const options = {
   title: "Nível de Ruído (Sala 001)",
@@ -35,6 +35,7 @@ const GraficoRuido = () => {
   useEffect(() => {
     async function fetch_data() {
       try {
+        await atualuzar_dados()
         const response = await buscar_dados();
         const dados = response.data.dados;
 
@@ -61,11 +62,15 @@ const GraficoRuido = () => {
       }
     }
 
-    fetch_data(); // importante: chamar a função
+    fetch_data(); // roda uma vez ao montar
+
+    const interval = setInterval(fetch_data, 5000); // roda de 5 em 5s
+
+    return () => clearInterval(interval); // evita memória vazando
   }, []);
 
   return (
-    <div className="w-full flex flex-col gap-2 justify-center items-center w-it bg-slate-800 border-2 border-gray-500 rounded-2xl">
+    <div className="w-full flex flex-col gap-2 justify-center items-center bg-slate-800 border-2 border-gray-500 rounded-2xl">
       <div className="w-full h-[400px] flex justify-center items-center">
         <Chart
           chartType="AreaChart"
