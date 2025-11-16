@@ -13,12 +13,12 @@ const Profile = ({ user, setUser }) => {
   
     return (
     <div
-      className="absolute top-14 -right-2"
+      className="absolute top-14 -right-2 z-50"
     >
       <div className="absolute right-5 -top-1 z-10 w-4 h-4 bg-white rotate-45"></div>
 
       {/* caixa principal */}
-      <div className="bg-white z-20 h-fit min-w-60 w-fit p-2 rounded-2xl shadow-2xl shadow-gray-500 border-2 border-gray-600 flex flex-col justify-center px-4">
+      <div className="bg-white z-40 h-fit min-w-60 w-fit p-2 rounded-2xl shadow-2xl shadow-gray-500 border-2 border-gray-600 flex flex-col justify-center px-4">
 
         <li className="flex gap-2 list-none text-gray-800 uppercase font-bold">
             Nome: <span className="text-gray-800 normal-case font-semibold"> { user.nome }</span>
