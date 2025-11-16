@@ -48,7 +48,7 @@ const Dash_area = ({ area, user }) => {
           </div>
         ) : (
           <section className="w-full h-full flex flex-col gap-2">
-            <section className="flex flex-col md:flex justify-around items-center w-full h-full">
+            <section className="flex flex-col md:flex-row justify-around items-center w-full h-full">
               <div className="flex flex-col mt-2 md:mt-0 items-center gap-4">
                 <span className="text-2xl text-white">Média de estresse</span>
                 <GraficoDonout numero={analise.media_estresse}/>
@@ -60,7 +60,7 @@ const Dash_area = ({ area, user }) => {
               </div>
             </section>
             <section className="w-full mt-10">
-              <section className="flex flex-col md:flex justify-between px-2\ w-full h-full">
+              <section className="flex flex-col md:flex-row justify-between px-2\ w-full h-full">
                 <div className="flex flex-col items-center gap-4">
                   <span className="text-2xl text-white">Pontos positivos</span>
                   <section className="flex flex-col w-full gap-2">
