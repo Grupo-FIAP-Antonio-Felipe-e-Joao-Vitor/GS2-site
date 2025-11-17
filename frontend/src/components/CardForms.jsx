@@ -12,7 +12,7 @@ const CardForms = ({ titulo, descricao, data, form, realizado }) => {
         <p className="border-t mt-4">Prazo de finalização: <span className="font-semibold">{data}</span></p>
         <div className="flex justify-center mt-3">
           {realizado ? (
-            <button disabled className="flex text-white bg-gray-500 transition-all duration-300 hover:bg-emerald-800 w-fit px-5 h-8 justify-center items-center rounded-2xl font-medium cursor-not-allowed">
+            <button disabled className="flex text-white bg-gray-500 transition-all duration-300 hover:bg-gray-800 w-fit px-5 h-8 justify-center items-center rounded-2xl font-medium cursor-not-allowed">
               Já respondido
             </button>
           ):(
