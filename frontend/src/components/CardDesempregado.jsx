@@ -7,7 +7,7 @@ const CardDesempregado = ({ setOpen, setSelected, desempregado }) => {
   return (
     <div
       onClick={handleClick}
-      className="relative cursor-pointer w-full md:w-56 h-96 rounded-lg border-2 border-gray-600 hover:border-gray-200 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg group"
+      className="relative cursor-pointer w-full md:w-auto h-96 rounded-lg border-2 border-gray-600 hover:border-gray-200 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg group"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300 z-10"></div>
