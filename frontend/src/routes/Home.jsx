@@ -51,7 +51,7 @@ const Home = () => {
                 })
               }
               className="hover:line-through transition-all duration-300 cursor-pointer px-3 py-1 bg-gray-500 rounded-full flex gap-2 items-center text-gray-200 font-semibold">
-              {filtro.area}
+              <span>X</span> {filtro.area}
             </span>
           )}
 
@@ -65,7 +65,7 @@ const Home = () => {
                 })
               }
             className="hover:line-through transition-all duration-300 cursor-pointer px-3 py-1 bg-gray-500 rounded-full flex gap-2 items-center text-gray-200 font-semibold">
-              {filtro.regiao}
+              <span>X</span> {filtro.regiao}
             </span>
           )}
 
