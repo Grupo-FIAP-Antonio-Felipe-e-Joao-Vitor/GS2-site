@@ -1,8 +1,8 @@
 import Modal from "./Modal";
 
 const FiltroModal = ({ setOpenFiltro, filtro, setFiltro }) => {
-  const tecnologias = ["Python", "Django", "PostgreSQL", "JavaScript", "Docker", "AWS", "Figma", "Design System", "Pesquisa de usuário", "Kubernetes", "Azure", "TensorFlow", "SQL", "TypeScript", "Redux", "React"];
-  const areas = ["DevOps", "Dados", "Desenvolvimento", "Design"];
+  const tecnologias = ["Python", "Django", "PostgreSQL", "JavaScript", "Docker", "AWS", "Figma", "Design System", "Kubernetes", "Azure", "TensorFlow", "SQL", "TypeScript", "Redux", "React", "Scrum", "Kanban", "JIRA", "Kubeflow", "PyTorch", "Kotlin", "Android SDK", "SEO", "Analytics", "Java", "Git", "APIs", "Spring Boot", "R", "Power Bi", "Vue.js", "Node.js", "Express", "MongoDB", "Selenium", "Pandas", "Spark"];
+  const areas = ["DevOps", "Dados", "Desenvolvimento", "Design", "Segurança", "Gestão", "Marketing"];
 
   // Toggle de habilidades (lista)
   function toggleHabilidade(item) {
@@ -35,8 +35,8 @@ const FiltroModal = ({ setOpenFiltro, filtro, setFiltro }) => {
   }
 
   return (
-    <Modal width="w-fit" height="h-fit">
-      <div className="p-6 h-full space-y-10">
+    <Modal>
+      <div className="p-6 h-full overflow-y-scroll space-y-10">
         {/* Header */}
         <div className="absolute top-0 left-0 w-full bg-white p-6 border-b flex justify-between items-center">
           <h2 className="text-3xl font-bold">Filtro</h2>
