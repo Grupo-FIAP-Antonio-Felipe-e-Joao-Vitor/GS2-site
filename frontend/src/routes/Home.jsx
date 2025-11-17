@@ -3,6 +3,8 @@ import DesempregadoModal from "../components/DesempregadoModal"
 import { RiMenuSearchLine } from "react-icons/ri"
 import FiltroModal from "../components/FiltroModal"
 import ExibirDesempregados from "../components/ExibirDesempregados"
+import avatar from "../assets/imagem-avatar.png"
+import Bot from "../components/Bot"
 
 const Home = () => {
 
@@ -14,6 +16,7 @@ const Home = () => {
     area: "",
     regiao: ""
   })
+  const [openBot, setOpenBot] = useState(false)
 
   return (
     <section className="flex flex-col gap-5 p-5">
@@ -57,14 +60,14 @@ const Home = () => {
 
           {/* REGIÃO */}
           {filtro.regiao && (
-            <span 
-            onClick={() =>
+            <span
+              onClick={() =>
                 setFiltro({
                   ...filtro,
                   regiao: ""
                 })
               }
-            className="hover:line-through transition-all duration-300 cursor-pointer px-3 py-1 bg-gray-500 rounded-full flex gap-2 items-center text-gray-200 font-semibold">
+              className="hover:line-through transition-all duration-300 cursor-pointer px-3 py-1 bg-gray-500 rounded-full flex gap-2 items-center text-gray-200 font-semibold">
               <span>X</span> {filtro.regiao}
             </span>
           )}
@@ -99,6 +102,17 @@ const Home = () => {
         <DesempregadoModal selected={selected} setOpen={setOpen} />
       )}
 
+      <Bot
+        avatar={avatar}
+        setOpenBot={setOpenBot}
+        openBot={openBot}
+        iframe={
+          <iframe
+            src="https://typebot.co/my-typebot-fit38xw"
+            className="w-full h-full border-none mt-2"
+          ></iframe>
+        }
+      />
 
     </section>
   )
