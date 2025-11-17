@@ -67,16 +67,16 @@ const Formulario = ({ user }) => {
   const opcoes = ["Nunca", "Às vezes", "Sempre"];
 
   return (
-    <div className="relative flex min-h-screen bg-blue-950 text-white">
+    <div className="relative flex flex-col min-h-screen py-5 w-full bg-blue-950 text-white">
       
       <Voltar />
+
+      <h1 className="text-4xl text-white uppercase font-bold text-center">Olá {user?.nome}</h1>
       
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex-1 p-10 flex flex-col items-center gap-8"
       >
-        <h1 className="text-4xl font-bold text-center uppercase">Olá {user?.nome} responda ao formulário de clima</h1>
-
         {perguntas.map((grupo, index) => (
           <div
             key={index}
