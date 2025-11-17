@@ -10,7 +10,7 @@ const Voltar = () => {
 
         <span
             onClick={() => navigate("/dashboard")}
-            className="text-gray-400 fixed top-20 left-10 text-lg font-semibold cursor-pointer hover:underline transition-all duration-300"
+            className="text-gray-400 md:block hidden fixed top-20 left-10 text-lg font-semibold cursor-pointer hover:underline transition-all duration-300"
         >
             &larr; Voltar ao dashboard
         </span>
