@@ -31,7 +31,7 @@ const ExibirDesempregados = ({ filtros, setOpen, setSelected }) => {
   const listaFiltrada = filtrarDesempregados()
 
   return (
-    <div className="grid md:grid-cols-6 gap-5 mt-5">
+    <div className="grid md:grid-cols-4 px-5 gap-5 mt-5">
       {listaFiltrada.map((desempregado) => (
         <CardDesempregado
           key={desempregado.id}
