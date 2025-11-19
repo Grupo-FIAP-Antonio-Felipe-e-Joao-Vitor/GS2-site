@@ -30,7 +30,7 @@ Os líderes da empresa conseguem ver no dashboard os colaboradores que estão lo
 ![Tela dashboard gerir funcionários](./docs/imagem6.png)
 
 Os líderes também possuem acesso a um dashboard de cada área da empresa (ex: TI, Marketing, Vendas, etc). Que mostra o nível médio de estresse indentificado em cada área, além do nível de satisfação, pontos positivos e negativos. Esses dados são tirados através do preenchimento do Health Form e são totalmente anônimos
-![Tela dashboard gerir funcionários](./docs/imagem7.png)
+![Tela dashboard áreas](./docs/imagem7.png)
 
 ---
 
