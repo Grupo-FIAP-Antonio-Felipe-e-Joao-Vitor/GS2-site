@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nome": "Ana Oliveira",
-    "foto": "https://randomuser.me/api/portraits/women/1.jpg",
+    "foto": "./src/assets/avatar1.jpg",
     "cargo": "Engenheira de Software",
     "resumo": "Especialista em desenvolvimento backend com foco em arquitetura escalável.",
     "localização": "São Paulo/SP",
@@ -56,7 +56,7 @@
   {
     "id": 2,
     "nome": "Bruno Almeida",
-    "foto": "https://randomuser.me/api/portraits/men/2.jpg",
+    "foto": "./src/assets/avatar5.jpg",
     "cargo": "Analista de Dados",
     "resumo": "Focado em análises estatísticas e geração de insights acionáveis.",
     "localização": "Rio de Janeiro/RJ",
@@ -110,7 +110,7 @@
   {
     "id": 3,
     "nome": "Carla Mendes",
-    "foto": "https://randomuser.me/api/portraits/women/3.jpg",
+    "foto": "./src/assets/avatar2.jpg",
     "cargo": "UX Designer",
     "resumo": "Cria experiências intuitivas com foco em acessibilidade.",
     "localização": "Curitiba/PR",
@@ -164,7 +164,7 @@
   {
     "id": 4,
     "nome": "Diego Santos",
-    "foto": "https://randomuser.me/api/portraits/men/4.jpg",
+    "foto": "./src/assets/avatar6.jpg",
     "cargo": "Engenheiro DevOps",
     "resumo": "Automatiza pipelines e gerencia infraestrutura em nuvem.",
     "localização": "São Paulo/SP",
@@ -218,7 +218,7 @@
   {
     "id": 5,
     "nome": "Eduarda Nunes",
-    "foto": "https://randomuser.me/api/portraits/women/5.jpg",
+    "foto": "./src/assets/avatar3.jpg",
     "cargo": "Cientista de Dados",
     "resumo": "Constrói modelos de machine learning para problemas reais.",
     "localização": "Belo Horizonte/MG",
@@ -272,7 +272,7 @@
   {
     "id": 6,
     "nome": "Fábio Gomes",
-    "foto": "https://randomuser.me/api/portraits/men/6.jpg",
+    "foto": "./src/assets/avatar7.jpg",
     "cargo": "Desenvolvedor Frontend Sênior",
     "resumo": "Especialista em React e arquitetura de componentes reutilizáveis.",
     "localização": "Porto Alegre/RS",
@@ -327,7 +327,7 @@
   {
     "id": 7,
     "nome": "Giovana Lima",
-    "foto": "https://randomuser.me/api/portraits/women/7.jpg",
+    "foto": "./src/assets/avatar4.jpg",
     "cargo": "Gerente de Projetos (PM)",
     "resumo": "Liderança de equipes ágeis e entrega de produtos de alto impacto.",
     "localização": "São Paulo/SP",
@@ -383,7 +383,7 @@
   {
     "id": 8,
     "nome": "Henrique Costa",
-    "foto": "https://randomuser.me/api/portraits/men/8.jpg",
+    "foto": "./src/assets/avatar8.jpg",
     "cargo": "Analista de Segurança da Informação",
     "resumo": "Proteção de sistemas e redes contra ameaças cibernéticas.",
     "localização": "Recife/PE",

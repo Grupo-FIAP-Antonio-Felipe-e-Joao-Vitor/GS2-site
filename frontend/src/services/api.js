@@ -8,7 +8,7 @@ const URL_render = "https://gs2-site.onrender.com"
 
 // Cria instância do axios
 const api = axios.create({
-    baseURL: URL_render // URL base
+    baseURL: URL_local // URL base
 });
 
 export default api
