@@ -37,14 +37,14 @@ const Dash_forms = () => {
 
         <div className="flex ml-20 md:ml-0 flex-wrap md:gap-10">
           <CardForms
-            titulo={"Formulário de desempenho"}
+            titulo={"Formulário de análise de clima"}
             descricao={"Este formulário tem o objetivo de avaliar o desempenho individual dos funcionários"}
             data={"19/11"}
             realizado={true}
           />
 
           <CardForms
-            titulo={"Health form"}
+            titulo={"Formulário de avaliação geral"}
             descricao={"Este formulário tem o objetivo de ajudar a empresa a melhorar o bem estar dos funcionários"}
             data={"23/11"}
             realizado={true}
