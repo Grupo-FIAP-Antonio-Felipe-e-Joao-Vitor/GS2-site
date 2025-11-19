@@ -6,7 +6,7 @@ import ExibirDesempregados from "../components/ExibirDesempregados"
 import avatar from "../assets/imagem-avatar.png"
 import Bot from "../components/Bot"
 
-const Home = () => {
+const Home = ({ user }) => {
 
   const [open, setOpen] = useState(false)
   const [selected, setSelected] = useState(null)
@@ -99,7 +99,7 @@ const Home = () => {
       />
 
       {open && selected && (
-        <DesempregadoModal selected={selected} setOpen={setOpen} />
+        <DesempregadoModal selected={selected} setOpen={setOpen} user={user}/>
       )}
 
       <Bot
